@@ -1,5 +1,16 @@
 const sql = require("mssql/msnodesqlv8");
-const { connectDB, config, queryType } = require("./index");
+const { connectDB, queryType } = require("./index");
+
+const config = {
+  server: "(local)\\SQLEXPRESS",
+  connectionTimeout: 1000 * 60,
+  requestTimeout: 1000 * 60,
+  database: "GOChat_2_0",
+  options: {
+    trustServerCertificate: true,
+    trustedConnection: true,
+  },
+};
 
 const connect = async () => {
   const pool = await connectDB({

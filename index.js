@@ -1,16 +1,5 @@
 const sql = require("mssql/msnodesqlv8");
 
-const config = {
-  server: "DESKTOP-MPFIB00\\SQLEXPRESS",
-  connectionTimeout: 1000 * 60,
-  requestTimeout: 1000 * 60,
-  database: "GOChat_2_0",
-  options: {
-    trustServerCertificate: true,
-    trustedConnection: true,
-  },
-};
-
 const queryType = {
   query: "QUERY",
   procedure: "PROCEDURE",
@@ -74,7 +63,6 @@ const connectDB = async (/**@type configType */ config) => {
 };
 
 module.exports = {
-  config,
   connectDB,
   queryType,
 };

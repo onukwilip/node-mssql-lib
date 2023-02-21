@@ -1,0 +1,21 @@
+{
+  "name": "node-mssql-helper",
+  "version": "1.0.0",
+  "description": "This is an NPM package developed by me to connect Node Js to MSSQL using both mssql and msnodesqlv8 NPM package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "node",
+    "mssql"
+  ],
+  "author": "Prince C. Onukwili",
+  "license": "ISC",
+  "dependencies": {
+    "msnodesqlv8": "^3.0.1",
+    "mssql": "^9.1.1",
+    "nodemon": "^2.0.20"
+  }
+}
